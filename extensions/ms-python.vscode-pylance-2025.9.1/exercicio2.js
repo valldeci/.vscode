@@ -24,13 +24,13 @@ const removeLivro = (idDoLivro) => {
   if (existeIdNoEstoque) {
     for (let indice = 0; indice < estoque.length; indice++) {
       if (estoque[indice].id === idDoLivro) {
-        console.log(O livro de id ${idDoLivro} foi removido);
+        console.log();
         estoque.splice(indice, 1);
         break;
       }
     }
   } else {
-    console.log(O livro de id ${idDoLivro} não foi encontrado);
+    console.
   }
 };
 
@@ -42,12 +42,12 @@ const atualizaQuantidade = (idDoLivro, novaQuantidade) => {
     for (let livro of estoque) {
       if (livro.id === idDoLivro) {
         livro.quantidade = novaQuantidade;
-        console.log(A quantidade do livro ${livro.titulo} foi atualizada);
+        console.log();
         break;
       }
     }
   } else {
-    console.log(O id ${idDoLivro} não foi localizado no estoque);
+    console.log(O id ${idDoLivro} );
   }
 };
 
@@ -99,11 +99,9 @@ const adicionaDaLista = (listaNovos) => {
   for (let livro of listaNovos) {
     const { id, titulo, autor, quantidade } = livro;
     adicionaLivro(id, titulo, autor, quantidade);
-  }
-  console.log(${listaNovos.length} livros adicionados);
+  
+  console.;
 };
 
 adicionaDaLista(listaNovosLivros);
 console.log(estoque);
-
-listarLivros();
